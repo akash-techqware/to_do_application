@@ -1,0 +1,15 @@
+<%# <p id="notice"><%= notice %></p>
+
+<p  class="h3">
+  <strong>Description:</strong>
+  <%= @list.description %>
+</p>
+
+<div class="container">
+  <strong>Completed:</strong>
+  <%= @list.completed %>
+</div>
+<div class="container">
+  <%= link_to 'Edit', edit_list_path(@list), class: 'btn btn-warning' %> |
+  <%= link_to 'Back', lists_path, class: 'btn btn-dark' %>
+</div>
